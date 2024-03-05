@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make Me Code</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="gradient-text">Make Me Code</h1>
+
+      <div class="editor-web-page">
+        <div class="left">
+          <label for="html"><i class="bx bxl-html5"></i>HTML</label>
+          <textarea
+            spellcheck="false"
+            onkeyup="run()"
+            id="html-code"
+          ></textarea>
+          <label for="css"><i class="bx bxl-css3"></i>CSS</label>
+          <textarea spellcheck="false" id="css-code" onkeyup="run()"></textarea>
+          <!-- <label for="javascript"
+            ><i class="bx bxl-javascript"></i>Javascript</label
+          >
+          <textarea
+            spellcheck="false"
+            onkeyup="run()"
+            id="javascript-code"
+          ></textarea> -->
+        </div>
+        <div class="right">
+          <label for="output">Output</label>
+          <iframe id="output"></iframe>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
